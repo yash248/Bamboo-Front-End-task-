@@ -9,6 +9,7 @@
 }
 body{
 	background-color:#2b2626;
+	 -webkit-appearance: none;
 }
 /*header*/
 header {
@@ -37,7 +38,7 @@ h1{
 .testbox {
 position:relative;
   margin: 145px auto;
-  width: 343px; 
+  width: 350px; 
       height: 313px;
   -webkit-border-radius: 8px/7px; 
   -moz-border-radius: 8px/7px; 
@@ -80,19 +81,16 @@ background-color: #430f49;
 }
 #btn1{
 	    background-color: #3d403d;
-    border: none;
+    border: 2px groove #101010;
     color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 19px;
+    margin-left: 10px;
     padding: 4px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 19px;
     width: 85px;
-	    margin-left: 51px;
-		    border: 2px #101010;
-    border-style: groove;
-    cursor: pointer
-	
 }
 /*reset button*/
 #btn2:hover
@@ -102,22 +100,39 @@ background-color: #430f49;
 }
 #btn2{
 	  background-color: #3d403d;
-    border: none;
+    border: 2px groove #101010;
     color: white;
-    padding: 5px 17px;
-    padding: 5px 17px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 19px;
+    margin-left: 15px;
+    margin-top: -20px;
+    padding: 4px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 19px;
     width: 85px;
-	    
-	    margin-left: 157px;
-       margin-top: -67px;
-	       border: 2px #101010;
-    border-style: groove;
-    cursor: pointer
 }
+#btn3:hover
+{
+background-color: #430f49;
+
+}
+#btn3{
+	  background-color: #3d403d;
+    border: 2px groove #101010;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 23px;
+    margin-left: 211px;
+    margin-top: -34px;
+    padding: 1px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 87px;
+}
+
 /*fingers*/	
 .divi{
 		margin-left: 60px;
