@@ -1,0 +1,89 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="form-validation.js"></script>
+<script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<body>
+ <header class="header">
+        <h1>BambooHR Front End Task</h1>
+ </header>
+           <div class="testbox">
+<form action="" name="counter">
+           <div id="form1">
+                 <label for="Num" class="p">Enter the no:</label><input type="number" id="counter" class="p1"value="" min="0" step="1" autocomplete="off" class="txtinput"><br>
+                 <label class="p"> Counter: </label> <div id="count1"> <input type="text" id="countmeonce" class="p1"> </div><br>
+                 <input type="button" name="Start" value="Start" onclick="count()" id="btn1"><br>
+                 <input  type="button" value="Reset" onclick="this.form.reset(); cleanbyme().value=0;" id="btn2"><br>
+           <div id="count2"> </div>
+             <div id="fing" class="divi"> &#9679; Fingers </div>
+             <div id="toes" class="divi1"> &#9679; Toes </div>
+           </div>
+</form>
+           </div>
+
+ <script>
+function count(){
+var num = document.getElementById("counter").value;
+var count = 0;
+
+var temp= setInterval(
+function (){
+if(count == num){ clearInterval(this); }
+else{
+count=count+1;
+document.getElementById("toes").style.color = "black";
+document.getElementById("fing").style.color = "black";
+if(count%3 == 0 && count%5 == 0){
+document.getElementById("fing").style.color = "red";
+document.getElementById("toes").style.color = "blue";
+}else if(count%3 == 0){
+document.getElementById("fing").style.color = "red";
+
+}
+else if(count%5 == 0){
+document.getElementById("toes").style.color = "blue";
+
+}
+else{
+document.getElementById("toes").style.color = "black";
+document.getElementById("fing").style.color = "black";
+}
+}
+document.getElementById("countmeonce").value = count;
+}
+,1000);
+}
+
+function resetme(){
+var p = 0;
+//document.getElementById("count2").innerHTML = 0;
+//document.getElementById("count1").innerHTML = 0;
+//clearInterval(temp);
+cleanbyme();
+}
+function cleanbyme()
+{
+document.getElementById("countmeonce").value=0;
+// document.getElementById("count1").innerHTML=0;
+
+
+}
+</script>
+<script>
+$('#Start').on('click', function() {
+    valid = true;   
+    if ($('#counter').val() == '') {
+        alert ("please enter number");
+        valid = false;
+    }
+});	
+<script>
+$(document).ready(function(){
+    $(":button.reset")
+});
+</script>
+</head>
+</script>
+</body>
+</html>

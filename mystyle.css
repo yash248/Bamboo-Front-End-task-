@@ -1,0 +1,142 @@
+
+/*media query*/
+
+@media only screen and (max-width: 520px) {
+	h1{
+		margin:10px;
+		margin: 34px;
+	}
+}
+body{
+	background-color:#2b2626;
+}
+/*header*/
+header {
+      height: 108px;
+    background: #825c5c;
+    border: 2px solid #1e211f;
+    width: 960px;
+    margin: 0px auto;
+	 -webkit-box-shadow: 3px 3px 7px #777;
+	 background: linear-gradient(to right, #3d979e,#988a71,#a0a1ab,#537353,rgba(138, 53, 148, 0.58),#857294,rgba(171, 120, 167, 0.81));
+}
+h1{
+	       color: #ffffff;
+    margin-left: 264px;
+    
+    position: relative;
+    margin: 34px;
+    margin-left: 315px;
+	overflow: hidden;
+    z-index: 2;
+	text-shadow: 1px 2px 0px #503636, 3px 2px 1px #777777;
+	
+   
+	}
+	/*form*/
+.testbox {
+position:relative;
+  margin: 145px auto;
+  width: 343px; 
+      height: 313px;
+  -webkit-border-radius: 8px/7px; 
+  -moz-border-radius: 8px/7px; 
+  border-radius: 8px/7px; 
+  background-color: #a9909a; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+box-shadow: 5px -2px 15px rgba(0,0,0,2.31);
+    border: solid 2px;
+	
+}
+#form1{
+	margin:20px;
+	
+      }
+/*labels*/	  
+.p{
+	    margin: 98px;
+	    font-weight: bold;
+        font-size: 18px;
+
+   }
+/*text box*/
+input{
+	
+	    width: 199px;
+    border-radius: 5px;
+    height: 33px;
+	 margin: 14px;
+    margin-left: 47px;
+	    border: 2px #101010;
+    border-style: groove;
+    
+}
+
+/*start button*/
+#btn1:hover
+{
+background-color: #430f49;
+}
+#btn1{
+	    background-color: #3d403d;
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    width: 85px;
+	    margin-left: 51px;
+		    border: 2px #101010;
+    border-style: groove;
+    cursor: pointer
+	
+}
+/*reset button*/
+#btn2:hover
+{
+background-color: #430f49;
+
+}
+#btn2{
+	  background-color: #3d403d;
+    border: none;
+    color: white;
+    padding: 5px 17px;
+    padding: 5px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    width: 85px;
+	    
+	    margin-left: 157px;
+       margin-top: -67px;
+	       border: 2px #101010;
+    border-style: groove;
+    cursor: pointer
+}
+/*fingers*/	
+.divi{
+		margin-left: 60px;
+    font-weight: bold;
+    font-size: 18px;
+	
+    
+		
+	}
+	.divi:before{
+		
+	}
+/*toes*/	
+	.divi1{
+	    margin-left: 169px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -21px;
+	}
+
+
+
